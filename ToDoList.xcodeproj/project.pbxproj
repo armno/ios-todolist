@@ -19,6 +19,7 @@
 		59B56691197D4F5F00470B87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B56679197D4F5F00470B87 /* UIKit.framework */; };
 		59B56699197D4F5F00470B87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59B56697197D4F5F00470B87 /* InfoPlist.strings */; };
 		59B5669B197D4F5F00470B87 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B5669A197D4F5F00470B87 /* ToDoListTests.m */; };
+		59B566A5197D509900470B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B566A4197D509900470B87 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		59B56696197D4F5F00470B87 /* ToDoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoListTests-Info.plist"; sourceTree = "<group>"; };
 		59B56698197D4F5F00470B87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59B5669A197D4F5F00470B87 /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		59B566A4197D509900470B87 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				59B56684197D4F5F00470B87 /* AppDelegate.h */,
 				59B56685197D4F5F00470B87 /* AppDelegate.m */,
+				59B566A4197D509900470B87 /* Main.storyboard */,
 				59B56687197D4F5F00470B87 /* Images.xcassets */,
 				59B5667C197D4F5F00470B87 /* Supporting Files */,
 			);
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B566A5197D509900470B87 /* Main.storyboard in Resources */,
 				59B56680197D4F5F00470B87 /* InfoPlist.strings in Resources */,
 				59B56688197D4F5F00470B87 /* Images.xcassets in Resources */,
 			);
