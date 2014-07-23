@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59A7CA28197F79AD006466B1 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A7CA27197F79AD006466B1 /* ToDoItem.m */; };
 		59B56676197D4F5F00470B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B56675197D4F5F00470B87 /* Foundation.framework */; };
 		59B56678197D4F5F00470B87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B56677197D4F5F00470B87 /* CoreGraphics.framework */; };
 		59B5667A197D4F5F00470B87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B56679197D4F5F00470B87 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59A7CA26197F79AD006466B1 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
+		59A7CA27197F79AD006466B1 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 		59B56672197D4F5F00470B87 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B56675197D4F5F00470B87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		59B56677197D4F5F00470B87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +125,8 @@
 				59B56684197D4F5F00470B87 /* AppDelegate.h */,
 				59B56685197D4F5F00470B87 /* AppDelegate.m */,
 				59B566A4197D509900470B87 /* Main.storyboard */,
+				59A7CA26197F79AD006466B1 /* ToDoItem.h */,
+				59A7CA27197F79AD006466B1 /* ToDoItem.m */,
 				74EF4B7F197E327D00149900 /* ToDoListTableViewController.h */,
 				74EF4B80197E327D00149900 /* ToDoListTableViewController.m */,
 				74EF4B81197E327D00149900 /* ToDoListTableViewController.xib */,
@@ -262,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59B56686197D4F5F00470B87 /* AppDelegate.m in Sources */,
+				59A7CA28197F79AD006466B1 /* ToDoItem.m in Sources */,
 				74EF4B82197E327D00149900 /* ToDoListTableViewController.m in Sources */,
 				59B56682197D4F5F00470B87 /* main.m in Sources */,
 				74EF4B7D197E30F900149900 /* AddToDoItemViewController.m in Sources */,
