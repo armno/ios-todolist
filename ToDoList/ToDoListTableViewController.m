@@ -8,6 +8,7 @@
 
 #import "ToDoListTableViewController.h"
 #import "ToDoItem.h"
+#import "AddToDoItemViewController.h"
 
 @interface ToDoListTableViewController ()
 
@@ -37,7 +38,14 @@
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
+    AddToDoItemViewController *source = [segue sourceViewController];
+    ToDoItem *item = source.toDoItem;
     
+    // add new item into the list and reload the list
+    if (item != nil) {
+        [self.toDoItems addObject:item];
+        [self.tableView reloadData];
+    }
 }
 
 - (void)viewDidLoad
@@ -82,6 +90,13 @@
     
     ToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
     cell.textLabel.text = toDoItem.itemName;
+    
+    // completed item should have a checkmark accessory
+    if (toDoItem.completed) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     
     return cell;
 }
@@ -142,4 +157,19 @@
 }
 */
 
+#pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // deselect the cell immediately after selecting
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    // search for the corresponding todo item in todoitems array
+    ToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
+    
+    // toggle completion state of tapped item
+    tappedItem.completed = !tappedItem.completed;
+    
+    // reload the row whose data just updated
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+}
 @end
